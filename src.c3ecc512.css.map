@@ -1,0 +1,1 @@
+{"version":3,"sources":["sass/utils/_visually-hidden.scss"],"names":[],"mappings":"AAAA,iBACE,iBAAA,CACA,kBAAA,CACA,SAAA,CACA,UAAA,CACA","file":"src.c3ecc512.css","sourceRoot":"../src","sourcesContent":[".visually-hidden {\n  position: absolute;\n  clip: rect(0 0 0 0);\n  width: 1px;\n  height: 1px;\n  margin: -1px;\n}\n"]}
