@@ -129,13 +129,21 @@
   width: 100%;
   height: 48px;
   border: 1px solid #ffffff;
+  outline: transparent;
   padding: 15px 28px;
 
   background-color: transparent;
   color: var(--invert-text-color);
 
+  transition: border var(--transition-duration) var(--transition-timing-function);
+
   @media (min-width: 1315px) {
     height: 70px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--main-accent-color);
   }
 }
 
@@ -157,7 +165,7 @@
 }
 
 .contacts-form__input:not(:placeholder-shown):required:invalid {
-  border-color: red;
+  border: 2px solid #ff0000;
 }
 
 .button {
@@ -166,4 +174,9 @@
   @media (min-width: 1315px) {
     @include button(354px, 70px, var(--main-accent-color), var(--invert-text-color));
   }
+}
+
+.button:hover,
+.button:focus {
+  outline: 1px solid var(--main-accent-color);
 }

@@ -9,6 +9,7 @@
   text-transform: uppercase;
   margin: 0 auto;
   border: none;
+  outline: transparent;
   cursor: pointer;
   width: $width;
   height: $heigth;
@@ -19,4 +20,6 @@
     font-size: 14px;
     line-height: 1;
   }
+
+  transition: outline var(--transition-duration) var(--transition-timing-function);
 }
