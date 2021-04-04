@@ -1,5 +1,15 @@
 .benefits {
-    position: relative;
+    @media screen and (max-width: 767px) {
+        padding-bottom: 39px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1345px) {
+        padding-bottom: 130px;
+    }
 }
 
 .benefits--container {
