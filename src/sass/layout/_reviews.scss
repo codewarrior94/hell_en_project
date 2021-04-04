@@ -117,7 +117,7 @@
   height: 0;
 
   background-position: 50% 50%;
-  background-image: url(./images/svg/slider-arrow-left.svg);
+  background-image: url(../../src/images/svg/slider-arrow-left.svg);
 }
 
 .slider-bar__list-item:last-child::after {
@@ -126,5 +126,5 @@
   height: 0;
 
   background-position: 50% 50%;
-  background-image: url(./images/svg/slider-arrow-right.svg);
+  background-image: url(../../src/images/svg/slider-arrow-left.svg);
 }
