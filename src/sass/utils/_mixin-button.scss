@@ -1,0 +1,25 @@
+@mixin button($width, $heigth, $bgc, $color) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.22;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+  width: $width;
+  height: $heigth;
+  background-color: $bgc;
+  color: $color;
+
+  @media (min-width: 1315px) {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  transition: outline var(--transition-duration) var(--transition-timing-function);
+}
