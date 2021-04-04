@@ -76,6 +76,10 @@
   color: #3d3d3d;
 }
 
+.read-further__link {
+  color: #ff6b09;
+}
+
 .slider-bar__wrapper {
   margin-top: 20px;
   margin-left: auto;
@@ -114,4 +118,13 @@
 
   background-position: 50% 50%;
   background-image: url(../../images/svg/slider-arrow-left.svg);
+}
+
+.slider-bar__list-item:last-child::after {
+  content: '';
+  width: 25px;
+  height: 0;
+
+  background-position: 50% 50%;
+  background-image: url(../../images/svg/slider-arrow-right.svg);
 }
