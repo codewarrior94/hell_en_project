@@ -15,6 +15,9 @@
     background-repeat: no-repeat;
     background-position: 200px 1473px ;
     background-size: 216px 137px;
+    @media screen and (min-width: 390px) {
+        background-position: calc(200px + (100vw - 390px) / 2) 1473px;
+    }
 }
                 /*Фонова картинка секції для ретина-дисплеїв*/
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
@@ -56,11 +59,17 @@
         width: 100%;
     }
 }
+
+
 /*Параметри елементів списку першого рівня*/
 .program-semester-list-item {
     padding-left: 26px;
-    padding-bottom: 49px;
     position: relative;
+    @media screen and (max-width: 767px) { /*Закривання у відрізок параметрів, які будуть заважати далі*/
+        &:not(:last-child) {
+            padding-bottom: 49px;
+        }
+    }
     &:before {              /*Псевдоелементи маркерів списку першого рівня (помаранчеві кружки)*/
         content: '';
         display: block;
@@ -104,13 +113,9 @@
     }
 }
 
-// .program-skill-list-item {
-//     &:before {
-//         contant: '—';
-//         font-size: 40px;
-//         color: orange;
-//     }
-// }
+.program-skill-list-item:not(:last-child) {
+    margin-bottom: 8px;
+}
 /* Параметри заголовків списку другого рівня*/
 .program-skill-name {
     font-weight: 700;
@@ -120,7 +125,7 @@
     color: var(--main-accent-color);
     height: 32px;
     padding-top: 6px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     &:before {              /*Декоративне маркування заголовків другого рівня*/
         content: '\2014';
     }
@@ -179,13 +184,13 @@
     /*Параметри елементів списку першого рівня*/
     .program-semester-list-item {
         padding-left: 55px;
-        padding-bottom: 39px;
     }
 /*Параметри списку другого рівня*/
     .program-skill-list {
         display:flex;
     }
 }
+
 
 /*Медіа-правило для підключення фонової картинки для ретина-моніторів*/
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -206,7 +211,7 @@
 }
 
 /*медіа-правило для задавання конкретних ширин елементів списку другого рівн згідно макету та їх лівих паддінгів */
-@media screen and (min-width: 768px) and (max-width: 1345px) {
+@media screen and (min-width: 768px) and (max-width: 1344px) {
     .program-skill-list-item {
         &:nth-child(1) {
             width: 176px;
@@ -221,6 +226,11 @@
             margin-left: 50px;
         }
     }
+
+        /*Параметри елементів списку першого рівня*/
+        .program-semester-list-item:not(:last-child) {
+                padding-bottom: 39px;
+        }
 }
 
 /*========= Верстка екранів від 1345px =========*/
@@ -231,6 +241,7 @@
         padding-top: 120px;
         padding-bottom: 363px;
         position: relative;
+        // z-index: -1;
         background-image: url(../images/program/program-desk.png);
         background-position: calc((100vw - 1680px) / 2) 676px ; /* Задавання позиції фонової картинки з її фіксацією по осі Х відносно
          інших елементів незалежно від ширини вюпорта. Розраховується як різниця між шириною вюпорта та величиною точки перелома поділена на два*/
@@ -244,7 +255,6 @@
             position: absolute;
             background-color: var(--main-background);
             transform: tanslateX(-50%);
-            // top: -60px;
             top: 279px;
         }
     }
@@ -280,7 +290,6 @@
     .program-semester-list-item {
         padding-left: 0;
         padding-bottom: 0;
-        padding-bottom: 39px;
         flex-basis: calc(100% / 5 + 60px); /*параметри сітки елементів списку першого рівня які задаються
          трохи гібридним способом (бо хочеться щоб автоматично вираховувало ширину але від'ємний марджин призводить до появи горизонтального скролу)*/
         &:not(:first-child) {
