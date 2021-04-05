@@ -1,5 +1,5 @@
+//Паддинг топ убран из section-container, будет добавлен нижний в секции Гарантии
 .section-container {
-  padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
   min-width: 320px;
@@ -80,13 +80,13 @@
 .reviews-section__title {
   margin-bottom: 20px;
 
-  font-family: Monstserrat;
+  font-family: var(--main-font-family);
   font-weight: 800;
   font-size: 20px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #111518;
+  color: var(--main-text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -110,19 +110,18 @@
 .slider-image__icon {
   width: 30px;
   height: 30px;
-  color: currentColor;
-  fill: #436eab;
+  border: 1 px solid teal;
 }
 
 .slider-title__name {
   margin: 0;
-  font-family: Monstserrat;
+  font-family: var(--main-font-family);
   font-weight: 800;
   font-size: 14px;
   line-height: 1.219;
   letter-spacing: 0.08em;
   text-align: center;
-  color: #ff6b09;
+  color: var(--main-accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -143,13 +142,13 @@
 }
 
 .slider-title__object {
-  font-family: Monstserrat;
+  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 12px;
   line-height: 1.219;
   letter-spacing: 0.08em;
   text-align: center;
-  color: #b9b9b9;
+  color: var(--additional-text-color);
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -163,7 +162,7 @@
 }
 
 .slide-decription {
-  font-family: Monstserrat;
+  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 12px;
   line-height: 1.666;
@@ -179,7 +178,7 @@
 }
 
 .read-further__link {
-  color: #ff6b09;
+  color: var(--main-accent-color);
 }
 
 .slider-bar__wrapper {
@@ -235,17 +234,17 @@
     height: 0;
 
     background-position: 50% 50%;
-    background-image: url(../images/svg/slider-arrow-left.svg);
+    background-image: url(./images/svg/slider-arrow-left.svg);
   }
 }
 
 @media screen and (max-width: 767px) {
   .slider-bar__list-item:last-child::after {
-    content: '';
+    content: ' ';
     width: 25px;
     height: 0;
 
     background-position: 50% 50%;
-    background-image: url(../images/svg/slider-arrow-right.svg);
+    background-image: url(./images/svg/slider-arrow-right.svg);
   }
 }
