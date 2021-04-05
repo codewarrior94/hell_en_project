@@ -50,6 +50,12 @@
   }
 }
 
+.slider-container__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
   .slider-container__left {
     width: 150px;
