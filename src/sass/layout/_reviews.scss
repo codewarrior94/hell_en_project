@@ -233,16 +233,17 @@
   }
 }
 
-/*@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .slider-bar__list-item:first-child::before {
     content: '';
     width: 25px;
     height: 0;
+    fill: var(--main-accent-color);
 
     background-position: 50% 50%;
-    background-image: url(./images/svg/slider-arrow-left.svg);
+    background-image: url(../images/svg/sprite.svg#icon-left);
   }
-}*/
+}
 
 /*@media screen and (max-width: 767px) {
   .slider-bar__list-item:last-child::after {
