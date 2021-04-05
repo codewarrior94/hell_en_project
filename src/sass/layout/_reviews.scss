@@ -227,7 +227,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
   .slider-bar__list-item:first-child::before {
     content: '';
     width: 25px;
@@ -236,9 +236,9 @@
     background-position: 50% 50%;
     background-image: url(./images/svg/slider-arrow-left.svg);
   }
-}
+}*/
 
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
   .slider-bar__list-item:last-child::after {
     content: ' ';
     width: 25px;
@@ -247,4 +247,4 @@
     background-position: 50% 50%;
     background-image: url(./images/svg/slider-arrow-right.svg);
   }
-}
+}*/
