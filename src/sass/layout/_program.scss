@@ -1,0 +1,322 @@
+
+
+// * {
+//     outline: solid brown 1px;
+// }
+
+.program  {
+    padding-top: 50px;
+    padding-bottom: 537px;
+    background-color: var(--dark-background);
+    background-image: url(../images/program/program-mob.png);
+    background-repeat: no-repeat;
+    background-position: 200px 1473px ;
+    background-size: 216px 137px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+        screen and (min-resolution: 192dpi) and (min-width: 320px),
+        screen and (min-resolution: 2dppx) and (min-width: 320px) {
+            .program {
+                background-image: url(../images/program/program-mob@2x.png);
+            }
+}
+
+
+// .program-auxiliary { /*Допоміжний який приховується і до якого прив'язується горизонтальна лінія*/
+//     background-color: var(--dark-background);
+//     height: 1px;
+//     margin-bottom: -1px;
+//     clip: rect(0 0 0 0);
+//     overflow: hidden;
+// }
+
+.program .container {
+
+    width: 100%;
+    padding: 0 20px;
+    // outline: solid brown 1px;
+}
+
+
+.program-heading {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--invert-text-color);
+
+    padding-bottom: 52px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+    }
+    @media screen and (min-width: 1345px) {
+        font-size: 46px;
+    }
+}
+
+.program-semester-list {
+    // width: 206px;
+    margin-left: 74px;
+    @media screen and (max-width: 247px) {
+        width: 100%;
+    }
+}
+
+.program-semester-list-item {
+    padding-left: 26px;
+    padding-bottom: 49px;
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 25px;
+        background-color: var(--main-accent-color);
+        position: absolute;
+        left: 0;
+        // top: 1px;
+        transform: translate(-50%, 0);
+    }
+    @media screen and (max-width: 1344px) {
+        &:not(:last-child) {
+            border-left: 1px solid var(--main-background);
+        }
+    }
+}
+
+.program-semester-heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--invert-text-color);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    @media screen and (min-width: 1345px) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.program-semester-number {
+    @media screen and (min-width: 1345px) {
+        font-size: 30px;
+        line-height: 0.933;
+    }
+}
+
+// .program-skill-list-item {
+//     &:before {
+//         contant: '—';
+//         font-size: 40px;
+//         color: orange;
+//     }
+// }
+
+.program-skill-name {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.667;
+    letter-spacing: 0.08em;
+    color: var(--main-accent-color);
+    height: 32px;
+    padding-top: 6px;
+    margin-bottom: 5px;
+    &:before {
+        content: '\2014';
+    }
+    @media screen and (min-width: 1345px) {
+        font-size: 20px;
+        line-height: 1.649;
+    }
+}
+
+.program-topic-list-item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.667;
+    letter-spacing: 0.08em;
+    color: var(--additional-text-color);
+    opacity: 0.5;
+    @media screen and (min-width: 1345px) {
+        font-size: 18px;
+        line-height: 1.556;
+    }
+}
+
+/*-----Верстка екранів 320-480px-------*/
+
+// @media screen and (min-width: 320px) {
+//     .program-semester-list {
+//         width: 88%;
+//     }
+// }
+/*========= Верстка екранів 480-768px =========*/
+
+@media screen and (min-width: 480px) {
+    .program .container {
+        max-width: 480px;
+    }
+}
+
+/* ========= Верстка екранів 768-1345px =========*/
+@media screen and (min-width: 768px) {
+    .program  {
+        padding-top: 61px;
+        padding-bottom: 391px;
+        background-image: url(../images/program/program-tabl.png);
+        background-position: 384px 823px ;
+        background-size: 469px 280px;
+    }
+
+    .program .container {
+        max-width: 768px;
+        padding: 0 40px;
+    }
+
+    .program-heading {
+        padding-bottom: 52px;
+    }
+
+    .program-semester-list-item {
+        padding-left: 55px;
+        padding-bottom: 39px;
+    }
+
+    .program-skill-list {
+        display:flex;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 192dpi) and (min-width: 768px),
+        screen and (min-resolution: 2dppx) and (min-width: 768px) {
+            .program {
+                background-image: url(../images/program/program-tabl@2x.png);
+            }
+}
+
+@media screen and (min-width: 939px) { /*медіа-правило для фіксації картинки на місці щоб вона не залазила під текст*/
+    .program {
+        background-position: calc(384px + (100vw - 939px) / 2) 823px ;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1345px) {
+    .program-skill-list-item {
+        &:nth-child(1) {
+            width: 176px;
+        }
+        &:nth-child(2) {
+            width: 155px;
+        }
+        &:nth-child(3) {
+            width: 110px;
+        }
+        &:not(:first-child) {
+            margin-left: 50px;
+        }
+    }
+}
+
+/*========= Верстка екранів від 1345px =========*/
+
+@media screen and (min-width: 1345px) {
+    .program  {
+        padding-top: 120px;
+        padding-bottom: 363px;
+        position: relative;
+        background-image: url(../images/program/program-desk.png);
+        background-position: calc((100vw - 1680px) / 2) 676px ;
+        background-size: 688px 502px;     
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            background-color: var(--main-background);
+            transform: tanslateX(-50%);
+            // top: -60px;
+            top: 279px;
+        }
+    }
+
+
+    .program .container {
+        max-width: 1345px;
+        padding: 0 15px;
+    }
+   
+    .program-heading {
+        text-align: left;
+        padding-bottom: 160px;
+    }
+    .program-semester-list {
+        display: flex;
+        flex-basis: calc(100%);
+        margin-left: 0;
+        position: relative;
+    }
+    .program-semester-list-item {
+        padding-left: 0;
+        padding-bottom: 39px;
+        flex-basis: calc(100% / 5 + 60px);
+        &:not(:first-child) {
+            margin-left: 30px;
+        }   
+        &:before {
+            width: 17px;
+            height: 17px;
+            top: -60px;
+            transform: translate(0, -50%);
+        }
+
+        // border-left: 0px solid transparent;
+    }
+    .program-skill-list {
+        display: block;
+        // flex-direction: vertical-align;
+    }
+
+    .program-semester-list-item {
+        padding-bottom: 0;
+    }
+
+    .program-skill-list-item:not(:last-child) {
+        padding-bottom: 25px;
+        .program-semester-list-item:first-child & {
+            padding-bottom: 53px;
+        }
+
+    }
+
+
+    .program-skill-name {
+        height: auto;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .program-semester-heading {
+        height: 28px;
+        padding-bottom: 0;
+    }
+
+    .program-semester-heading {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1345px),
+        screen and (min-resolution: 192dpi) and (min-width: 1345px),
+        screen and (min-resolution: 2dppx) and (min-width: 1345px) {
+            .program {
+                background-image: url(../images/program/program-desk@2x.png);
+            }
+}
