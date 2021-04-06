@@ -9,6 +9,8 @@
 
     @media screen and (min-width: 1345px) {
         padding-bottom: 130px;
+        position: relative;
+        z-index: 5;
     }
 }
 
@@ -73,11 +75,6 @@
 .benefits__list {
     counter-reset: section;/*счетчик*/
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.43;
-    letter-spacing: 0.08em;
-
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -87,9 +84,6 @@
     }
 
     @media screen and (min-width: 1345px) {
-        font-size: 20px;
-        line-height: 1.4;
-
         margin-top: calc(-1 * 30px);
         margin-left: calc(-1 * 40px);
     }
@@ -120,4 +114,16 @@
         margin-bottom: 10px;
     }
 
+}
+
+.benefits__description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.08em;
+
+    @media screen and (min-width: 1345px) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
 }
