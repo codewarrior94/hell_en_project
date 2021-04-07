@@ -1,13 +1,13 @@
 .hwd-section {
   height: auto;
   margin: 0 auto;
-  padding-top: 130px;
+  // padding-top: 130px;
   padding-bottom: 130px;
 
   background-color: var(--main-background);
 
   @media screen and (max-width: 1314px) {
-    padding-top: 50px;
+    // padding-top: 50px;
     padding-bottom: 50px;
   }
 }
