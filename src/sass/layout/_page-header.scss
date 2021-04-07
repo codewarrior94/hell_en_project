@@ -68,7 +68,7 @@
 .logo__mobile {
   display: block;
 
-  @media (min-width: 768ppx) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -192,7 +192,7 @@
   height: 100vh;
   padding: 30px 20px;
   background-color: rgba(17, 21, 24, 0.9);
-  z-index: 999;
+  z-index: 1001;
 
   transform: translateX(100%);
   transition: transform var(--transition-duration) var(--transition-timing-function);
@@ -247,7 +247,7 @@
 .nav-menu__link {
   font-weight: 800;
   font-size: 20px;
-  line-height: 1, 8;
+  line-height: 1.8;
   letter-spacing: 0.03em;
 
   color: var(--invert-text-color);
