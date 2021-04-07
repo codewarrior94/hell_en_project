@@ -29,8 +29,13 @@
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 767px) {
-    max-width: 480px;
+  @media (max-width: 479px) {
+    min-width: 320px;
+    padding-top: 30px;
+  }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    width: 480px;
     padding-top: 30px;
   }
 
