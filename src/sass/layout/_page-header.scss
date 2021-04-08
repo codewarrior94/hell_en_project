@@ -16,7 +16,7 @@
     height: 100px;
   }
   @media screen and (min-width: 1345px) {
-    height: 105px;
+    height: 135px;
   }
 }
 
@@ -152,7 +152,7 @@
 
     &:hover,
     &:focus {
-      outline: 1px solid var(--main-accent-color);
+      outline: 2px solid var(--main-accent-color);
     }
   }
 }
