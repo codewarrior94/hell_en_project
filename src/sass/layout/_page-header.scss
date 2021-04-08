@@ -16,7 +16,7 @@
     height: 100px;
   }
   @media screen and (min-width: 1345px) {
-    height: 105px;
+    height: 135px;
   }
 }
 
@@ -54,7 +54,7 @@
 }
 
 .logo__icon {
-  @media (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     width: 80px;
     height: 30px;
   }
@@ -68,7 +68,7 @@
 .logo__mobile {
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     display: none;
   }
 }
@@ -152,7 +152,7 @@
 
     &:hover,
     &:focus {
-      outline: 1px solid var(--main-accent-color);
+      outline: 2px solid var(--main-accent-color);
     }
   }
 }
@@ -234,7 +234,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 480px) and (max-width: 1344px) {
     align-items: center;
     margin-top: 72px;
   }

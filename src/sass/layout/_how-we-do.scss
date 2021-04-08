@@ -1,13 +1,11 @@
 .hwd-section {
   height: auto;
   margin: 0 auto;
-  // padding-top: 130px;
   padding-bottom: 130px;
 
   background-color: var(--main-background);
 
   @media screen and (max-width: 1314px) {
-    // padding-top: 50px;
     padding-bottom: 50px;
   }
 }
@@ -26,13 +24,9 @@
     padding-right: 40px;
   }
 
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+  // @media screen and (min-width: 320px) {
+  //   width: 480px;
+  // }
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -89,7 +83,13 @@
 
   box-shadow: 0px 8px 26px 0px rgba(0, 0, 0, 0.1);
 
-  @media (max-width: 767px) {
+  @media (max-width: 479px) {
+    width: auto;
+    height: 280px;
+    padding: 30px 0 10px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 280px;
     min-height: 280px;
     padding: 30px 0 7px;
@@ -144,6 +144,8 @@
   &:hover,
   &:focus {
     background-color: var(--main-accent-color);
+
+    transition: var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:hover .hwd-section__caption,
@@ -151,16 +153,22 @@
   &:hover .hwd-section__text,
   &:focus .hwd-section__text {
     color: var(--invert-text-color);
+
+    transition: var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:hover .hwd-section__icon,
   &:focus .hwd-section__icon {
     fill: var(--invert-text-color);
+
+    transition: var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:hover .hwd-section__caption::after,
   &:focus .hwd-section__caption::after {
     background-color: var(--main-background);
+
+    transition: var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -172,10 +180,6 @@
   @media (max-width: 767px) {
     margin-bottom: 20px;
   }
-}
-
-.hwd-section__icon {
-  fill: var(--main-accent-color);
 }
 
 .hwd-section__thumb {

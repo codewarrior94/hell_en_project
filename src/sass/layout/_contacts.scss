@@ -40,8 +40,12 @@
 
 .contacts-container {
   text-align: center;
-  @media (max-width: 767px) {
-    padding: 50px 20px;
+  padding: 50px 20px;
+  @media (min-width: 320px) and (max-width: 479px) {
+    max-width: 320px;
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
+    max-width: 480px;
   }
 
   @media (min-width: 768px) and (max-width: 1314px) {
@@ -61,11 +65,10 @@
   font-size: 14px;
   line-height: 1.36;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 
   @media (max-width: 767px) {
-    width: 280px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    width: 100%;
   }
 
   @media (min-width: 768px) {
@@ -85,6 +88,20 @@
 
 /* FORM */
 
+.contacts-form {
+  @media (min-width: 320px) and (max-width: 479px) {
+    max-width: 320px;
+  }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    max-width: 480px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1344px) {
+    max-width: 768px;
+  }
+}
+
 .contacts-form__heading {
   font-weight: 600;
   font-size: 12px;
@@ -92,7 +109,7 @@
   letter-spacing: 0.08em;
 
   @media (max-width: 767px) {
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 30px;
   }
@@ -185,6 +202,6 @@
 
   &:hover,
   &:focus {
-    outline: 1px solid var(--main-accent-color);
+    outline: 2px solid var(--main-accent-color);
   }
 }
