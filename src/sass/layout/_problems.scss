@@ -2,8 +2,8 @@
     @media screen and (max-width: 767px) {
         background-image: linear-gradient(
             to bottom,
-            var(--main-text-color) 78.6%,
-            var(--invert-text-color) 21.4%);
+            var(--main-text-color) 75%,
+            var(--invert-text-color) 25%);
         
         padding-top: 50px;
         padding-bottom: 50px;
@@ -12,8 +12,8 @@
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(
             to bottom,
-            var(--main-text-color) 69.1%,
-            var(--invert-text-color) 30.9%);
+            var(--main-text-color) 64%,
+            var(--invert-text-color) 36%);
         
         padding-top: 60px;
         padding-bottom: 50px;
@@ -24,10 +24,10 @@
             url(../../src/images/svg/campfire.svg),
             linear-gradient(
                 to bottom,
-                var(--main-text-color) 78.9%,
-                var(--invert-text-color) 21.1%);
+                var(--main-text-color) 560px,
+                var(--invert-text-color) 150px);
         background-repeat: no-repeat;
-        background-position:  top 92px right, center;
+        background-position:  bottom 280px right, center;
         background-size: 408px, auto auto;
 
         padding-top: 100px;
