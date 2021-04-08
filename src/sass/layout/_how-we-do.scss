@@ -172,6 +172,10 @@
   }
 }
 
+.hwd-section__item {
+  fill: var(--main-accent-color);
+}
+
 .hwd-section__svgthumb {
   display: flex;
   justify-content: center;
