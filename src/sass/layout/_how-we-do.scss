@@ -157,6 +157,10 @@
     transition: var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .hwd-section__icon {
+    fill: var(--main-accent-color);
+  }
+
   &:hover .hwd-section__icon,
   &:focus .hwd-section__icon {
     fill: var(--invert-text-color);
