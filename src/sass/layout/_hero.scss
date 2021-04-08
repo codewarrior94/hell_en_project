@@ -144,6 +144,14 @@
   align-items: center;
   font-style: normal;
   font-weight: bold;
+  outline: transparent;
+
+  transition: outline var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    outline: 1px solid var(--main-accent-color);
+  }
 
   @media screen and (max-width: 767px) {
     margin-left: auto;
