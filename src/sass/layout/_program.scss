@@ -1,0 +1,339 @@
+        /*===================== СЕКЦІЯ PROGRAM =====================*/
+
+// * {
+//     outline: solid brown 1px;
+// }
+
+/*-----Верстка екранів 320-480px-------*/
+
+/*Параметри секції*/
+.program  {
+    padding-top: 50px;
+    padding-bottom: 537px;
+    background-color: var(--dark-background);
+    background-image: url(../images/program/program-mob.png); /*Фонова картинка секції*/
+    background-repeat: no-repeat;
+    background-position: 200px 1473px ;
+    background-size: 216px 137px;
+    @media screen and (min-width: 390px) {
+        background-position: calc(200px + (100vw - 390px) / 2) 1473px;
+    }
+}
+                /*Фонова картинка секції для ретина-дисплеїв*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+        screen and (min-resolution: 192dpi) and (min-width: 320px),
+        screen and (min-resolution: 2dppx) and (min-width: 320px) {
+            .program {
+                background-image: url(../images/program/program-mob@2x.png);
+            }
+}
+
+
+.program .container { 
+    padding: 0 20px;
+}
+
+/*Параметри заголовку секції*/
+.program-heading {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--invert-text-color);
+    padding-bottom: 52px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+    }
+    @media screen and (min-width: 1345px) {
+        font-size: 46px;
+    }
+}
+
+/*Параметри списку першого рівня*/
+.program-semester-list {
+    // width: 206px;
+    margin-left: 74px;
+    @media screen and (max-width: 247px) {
+        width: 100%;
+    }
+}
+
+
+/*Параметри елементів списку першого рівня*/
+.program-semester-list-item {
+    padding-left: 26px;
+    position: relative;
+    @media screen and (max-width: 767px) { /*Закривання у відрізок параметрів, які будуть заважати далі*/
+        &:not(:last-child) {
+            padding-bottom: 49px;
+        }
+    }
+    &:before {              /*Псевдоелементи маркерів списку першого рівня (помаранчеві кружки)*/
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 25px;
+        background-color: var(--main-accent-color);
+        position: absolute;
+        left: 0;
+        // top: 1px;
+        transform: translate(-50%, 0);
+    }
+    @media screen and (max-width: 1344px) {
+        &:not(:last-child) {
+            border-left: 1px solid var(--main-background); /*Вертикальна декоративна лінія, яка формується 
+             (до точки перелому 1344px) лівим бордером елементів списку першого рівня*/
+        }
+    }
+}
+/* Заголовки заголовків списку першого рівня*/
+.program-semester-heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--invert-text-color);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    @media screen and (min-width: 1345px) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+/* елементи нумерації в заголовках списку першого рівня (номер семестру)*/
+.program-semester-number {
+    @media screen and (min-width: 1345px) {
+        font-size: 30px;
+        line-height: 0.933;
+    }
+}
+
+.program-skill-list-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+/* Параметри заголовків списку другого рівня*/
+.program-skill-name {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.667;
+    letter-spacing: 0.08em;
+    color: var(--main-accent-color);
+    height: 32px;
+    padding-top: 6px;
+    margin-bottom: 6px;
+    &:before {              /*Декоративне маркування заголовків другого рівня*/
+        content: '\2014';
+    }
+    @media screen and (min-width: 1345px) {
+        font-size: 20px;
+        line-height: 1.649;
+    }
+}
+
+/*Параметри елементів списку третього рівня*/
+.program-topic-list-item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.667;
+    letter-spacing: 0.08em;
+    color: var(--additional-text-color);
+    opacity: 0.5;
+    @media screen and (min-width: 1345px) {
+        font-size: 18px;
+        line-height: 1.556;
+    }
+}
+
+/*========= Верстка екранів 480-768px =========*/
+
+/*Фіксація розміру контейнеру*/
+@media screen and (min-width: 480px) {
+    .program .container {
+        max-width: 480px;
+    }
+}
+
+/* ========= Верстка екранів 768-1345px =========*/
+
+@media screen and (min-width: 768px) {
+/*Параметри секції*/
+    .program  {
+        padding-top: 61px;
+        padding-bottom: 391px;
+        background-image: url(../images/program/program-tabl.png); /*Підключення фонової картинки та її параметри*/
+        background-position: 384px 823px ;
+        background-size: 469px 280px;
+    }
+
+/*Фіксація розміру контейнеру*/
+    .program .container {
+        max-width: 768px;
+        padding: 0 40px;
+    }
+
+    /*Параметри заголовку секції*/
+    .program-heading {
+        padding-bottom: 52px;
+    }
+
+    /*Параметри елементів списку першого рівня*/
+    .program-semester-list-item {
+        padding-left: 55px;
+    }
+/*Параметри списку другого рівня*/
+    .program-skill-list {
+        display:flex;
+    }
+}
+
+
+/*Медіа-правило для підключення фонової картинки для ретина-моніторів*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 192dpi) and (min-width: 768px),
+        screen and (min-resolution: 2dppx) and (min-width: 768px) {
+            .program {
+                background-image: url(../images/program/program-tabl@2x.png);
+            }
+}
+
+/*медіа-правило для фіксації картинки на місці щоб вона не залазила під текст*/
+@media screen and (min-width: 939px) { 
+    .program {
+        background-position: calc(384px + (100vw - 939px) / 2) 823px ; /* Задавання позиції фонової картинки з її фіксацією по осі Х відносно
+        інших елементів незалежно від ширини вюпорта. Розраховується як різниця між шириною вюпорта та величиною точки перелома поділена на два,
+         плюс відстань від лівого краю на якій картинка фіксується у точці перелому*/
+    }
+}
+
+/*медіа-правило для задавання конкретних ширин елементів списку другого рівн згідно макету та їх лівих паддінгів */
+@media screen and (min-width: 768px) and (max-width: 1344px) {
+    .program-skill-list-item {
+        &:nth-child(1) {
+            width: 176px;
+        }
+        &:nth-child(2) {
+            width: 155px;
+        }
+        &:nth-child(3) {
+            width: 110px;
+        }
+        &:not(:first-child) {
+            margin-left: 50px;
+        }
+    }
+
+        /*Параметри елементів списку першого рівня*/
+        .program-semester-list-item:not(:last-child) {
+                padding-bottom: 39px;
+        }
+}
+
+/*========= Верстка екранів від 1345px =========*/
+
+@media screen and (min-width: 1345px) {
+/*Параметри секції*/
+    .program  {
+        padding-top: 120px;
+        padding-bottom: 363px;
+        position: relative;
+        // z-index: -1;
+        background-image: url(../images/program/program-desk.png);
+        background-position: calc((100vw - 1680px) / 2) 676px ; /* Задавання позиції фонової картинки з її фіксацією по осі Х відносно
+         інших елементів незалежно від ширини вюпорта. Розраховується як різниця між шириною вюпорта та величиною точки перелома поділена на два*/
+        background-size: 688px 502px;     
+        &:before {         /*Горизонтальна декоративна лінія, яка формується 
+            (після точки перелому 1344px) псевдоелементом, який чіпляється на контейнер*/
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            background-color: var(--main-background);
+            top: 279px;
+        }
+    }
+
+/*Фіксація розміру контейнеру*/
+    .program .container {
+        max-width: 1345px;
+        padding: 0 15px;
+    }
+   
+    /*Параметри заголовку секції*/
+    .program-heading {
+        text-align: left;
+        padding-bottom: 160px;
+    }
+
+    /* Заголовки заголовків списку першого рівня*/
+    .program-semester-heading {
+        height: 28px;
+        padding-bottom: 0;
+        margin-bottom: 25px;
+    }
+
+    /*Параметри списку першого рівня*/
+    .program-semester-list {
+        display: flex;
+        flex-basis: calc(100%);
+        margin-left: 0;
+        position: relative;
+    }
+
+    /*Параметри елементів списку першого рівня*/
+    .program-semester-list-item {
+        padding-left: 0;
+        padding-bottom: 0;
+        flex-basis: calc(100% / 5 + 60px); /*параметри сітки елементів списку першого рівня які задаються
+         трохи гібридним способом (бо хочеться щоб автоматично вираховувало ширину але від'ємний марджин призводить до появи горизонтального скролу)*/
+        &:not(:first-child) {
+            margin-left: 30px;
+        }   
+        &:before {  /*Псевдоелементи маркерів списку першого рівня (помаранчеві кружки) параметри для розміщення по горизонталі*/
+            width: 17px;
+            height: 17px;
+            top: -60px;
+            transform: translate(0, -50%);
+        }
+
+        // border-left: 0px solid transparent;
+    }
+
+    /*Параметри списку другого рівня*/
+    .program-skill-list {
+        display: block;
+        // flex-direction: vertical-align;
+    }
+
+    /*Параметри нижнього марджина елементів списку другого рівня*/
+    .program-skill-list-item:not(:last-child) {  
+        margin-bottom: 25px;
+        .program-semester-list-item:first-child & { /*Тобто ".program-semester-list-item:first-child .program-skill-list-item:not(:last-child) {...}"
+        тобто у всіх крім останнього елементів списку другого рівня які входять у перший елемент списку першого рівня нижній марджин задати 53px.
+        І нехай гикнеться тому, хто робив шаблон :) Зовсім трішки*/
+            margin-bottom: 53px;
+        }
+
+    }
+
+    /* Параметри заголовків списку другого рівня*/
+    .program-skill-name {
+        height: auto;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/*Медіа-правило для підключення фонової картинки для ретина-моніторів*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1345px),
+        screen and (min-resolution: 192dpi) and (min-width: 1345px),
+        screen and (min-resolution: 2dppx) and (min-width: 1345px) {
+            .program {
+                background-image: url(../images/program/program-desk@2x.png);
+            }
+}

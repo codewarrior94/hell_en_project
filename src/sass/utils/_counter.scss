@@ -1,0 +1,21 @@
+.counter-reset {
+  counter-reset: section;
+}
+
+.counter-increment::before {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: var(--main-accent-color);
+
+  display: block;
+  /*счетчик*/
+  counter-increment: section;
+  content: '\2014  0'counter(section); /*\2014 это cпецсимвол длинное тере*/
+
+  @media screen and (min-width: 1345px) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}

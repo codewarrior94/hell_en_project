@@ -1,0 +1,162 @@
+//ADVANTAGES section
+.advantages {
+  padding-bottom: 50px;
+  @media screen and (min-width: 1345px) {
+    padding-bottom: 130px;
+  }
+}
+
+.advantages-container {
+  @media screen and (max-width: 479px) {
+    min-width: 320px;
+    width: 100%;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-left: 52px;
+    padding-right: 52px;
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1344px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 768px;
+  }
+  @media screen and (min-width: 1345px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1315px;
+  }
+}
+
+.advantages__list {
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1344px) {
+    display: flex;
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 1345px) {
+    display: flex;
+    margin-top: 99px;
+  }
+  // outline: 1px solid blue;
+}
+
+.advantages__item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 60px;
+  padding-left: 60px;
+
+  &:first-child {
+    margin-left: 0px;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(first-child) {
+      margin-top: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1344px) {
+    &:not(first-child) {
+      margin-left: 21px;
+    }
+    width: calc((100% - 42px) / 3);
+  }
+  @media screen and (min-width: 1345px) {
+    width: calc(100% / 3);
+    height: 102px;
+    padding-left: 100px;
+  }
+
+  &:before {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 1344px) {
+      width: 59px;
+      height: 60px;
+    }
+
+    @media screen and (min-width: 1345px) {
+      width: 100px;
+      height: 102px;
+    }
+  }
+}
+
+.student-item::before {
+  @media screen and (max-width: 1344px) {
+    background-image: url(../images/svg/female-student-border.svg);
+  }
+
+  @media screen and (min-width: 1345px) {
+    background-image: url(../images/svg/female-student-border-d.svg);
+  }
+}
+
+.metodics-item {
+  @media screen and (min-width: 1345px) {
+    margin-left: 21px;
+  }
+}
+
+.metodics-item::before {
+  @media screen and (max-width: 1344px) {
+    background-image: url(../images/svg/mobile-learning-border.svg);
+  }
+
+  @media screen and (min-width: 1345px) {
+    background-image: url(../images/svg/mobile-learning-border-d.svg);
+  }
+}
+.insurance-item::before {
+  @media screen and (max-width: 1344px) {
+    background-image: url(../images/svg/insurance-border.svg);
+  }
+
+  @media screen and (min-width: 1345px) {
+    background-image: url(../images/svg/insurance-border-d.svg);
+  }
+}
+
+// .advantages__icon {
+//   display: flex;
+//   @media screen and (max-width: 1344px) {
+//     width: 59px;
+//   }
+//   @media screen and (min-width: 1345px) {
+//     width: 100px;
+//   }
+// }
+
+.advantages__title {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+
+  color: var(--main-text-color);
+
+  @media screen and (max-width: 1344px) {
+    font-size: 14px;
+    line-height: 143%;
+    margin-left: 10px;
+  }
+  @media screen and (min-width: 1345px) {
+    font-size: 20px;
+    line-height: 164.9%;
+    margin-left: -19px;
+  }
+  // outline: 1px solid tomato;
+}
