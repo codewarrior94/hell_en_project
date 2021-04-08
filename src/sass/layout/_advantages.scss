@@ -106,7 +106,9 @@
 }
 
 .metodics-item {
-  margin-left: 21px;
+  @media screen and (min-width: 1345px) {
+    margin-left: 21px;
+  }
 }
 
 .metodics-item::before {
